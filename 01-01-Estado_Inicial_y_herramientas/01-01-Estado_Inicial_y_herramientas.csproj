@@ -114,6 +114,12 @@
     <Content Include="07-WebForm-TextBox.aspx" />
     <Content Include="08-WebForm-RadioButton.aspx" />
     <Content Include="09-WebForm-CheckBox.aspx" />
+    <Content Include="10-WebForm-HyperLink_and_LinkButton.aspx" />
+    <Content Include="11-WebForm-HyperLink_and_LinkButton_segunda_pagina.aspx" />
+    <Content Include="12-WebForm-ImageButton_and_metodo_command.aspx" />
+    <Content Include="13-WebForm-DropDownList-01.aspx" />
+    <Content Include="14-WebForm-DropDownList-02_inf_xml.aspx" />
+    <Content Include="15-WebForm-ListBox.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -122,6 +128,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DropDownList-03_Frutas.xml" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -231,6 +238,48 @@
     </Compile>
     <Compile Include="09-WebForm-CheckBox.aspx.designer.cs">
       <DependentUpon>09-WebForm-CheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10-WebForm-HyperLink_and_LinkButton.aspx.cs">
+      <DependentUpon>10-WebForm-HyperLink_and_LinkButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10-WebForm-HyperLink_and_LinkButton.aspx.designer.cs">
+      <DependentUpon>10-WebForm-HyperLink_and_LinkButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11-WebForm-HyperLink_and_LinkButton_segunda_pagina.aspx.cs">
+      <DependentUpon>11-WebForm-HyperLink_and_LinkButton_segunda_pagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11-WebForm-HyperLink_and_LinkButton_segunda_pagina.aspx.designer.cs">
+      <DependentUpon>11-WebForm-HyperLink_and_LinkButton_segunda_pagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="12-WebForm-ImageButton_and_metodo_command.aspx.cs">
+      <DependentUpon>12-WebForm-ImageButton_and_metodo_command.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="12-WebForm-ImageButton_and_metodo_command.aspx.designer.cs">
+      <DependentUpon>12-WebForm-ImageButton_and_metodo_command.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13-WebForm-DropDownList-01.aspx.cs">
+      <DependentUpon>13-WebForm-DropDownList-01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13-WebForm-DropDownList-01.aspx.designer.cs">
+      <DependentUpon>13-WebForm-DropDownList-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14-WebForm-DropDownList-02_inf_xml.aspx.cs">
+      <DependentUpon>14-WebForm-DropDownList-02_inf_xml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14-WebForm-DropDownList-02_inf_xml.aspx.designer.cs">
+      <DependentUpon>14-WebForm-DropDownList-02_inf_xml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15-WebForm-ListBox.aspx.cs">
+      <DependentUpon>15-WebForm-ListBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15-WebForm-ListBox.aspx.designer.cs">
+      <DependentUpon>15-WebForm-ListBox.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
