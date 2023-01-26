@@ -111,6 +111,9 @@
     <Content Include="04-WebForm-Eventos_del_proyecto.aspx" />
     <Content Include="05-WebForm-Variables_de_sesión.aspx" />
     <Content Include="06-WebForm-eventos_de_controles.aspx" />
+    <Content Include="07-WebForm-TextBox.aspx" />
+    <Content Include="08-WebForm-RadioButton.aspx" />
+    <Content Include="09-WebForm-CheckBox.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -207,6 +210,27 @@
     </Compile>
     <Compile Include="06-WebForm-eventos_de_controles.aspx.designer.cs">
       <DependentUpon>06-WebForm-eventos_de_controles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="07-WebForm-TextBox.aspx.cs">
+      <DependentUpon>07-WebForm-TextBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="07-WebForm-TextBox.aspx.designer.cs">
+      <DependentUpon>07-WebForm-TextBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="08-WebForm-RadioButton.aspx.cs">
+      <DependentUpon>08-WebForm-RadioButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="08-WebForm-RadioButton.aspx.designer.cs">
+      <DependentUpon>08-WebForm-RadioButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09-WebForm-CheckBox.aspx.cs">
+      <DependentUpon>09-WebForm-CheckBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09-WebForm-CheckBox.aspx.designer.cs">
+      <DependentUpon>09-WebForm-CheckBox.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
