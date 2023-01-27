@@ -120,7 +120,15 @@
     <Content Include="13-WebForm-DropDownList-01.aspx" />
     <Content Include="14-WebForm-DropDownList-02_inf_xml.aspx" />
     <Content Include="15-WebForm-ListBox.aspx" />
+    <Content Include="16-WebForm-RadioButtonList.aspx" />
+    <Content Include="17-WebForm-BulletedList.aspx" />
+    <Content Include="18-WebForm-FileUpload.aspx" />
+    <Content Include="19-WebForm-Calendar.aspx" />
+    <Content Include="20-WebForm-AdRotator.aspx" />
+    <Content Include="21-WebForm-HiddenField.aspx" />
+    <Content Include="22-WebForm-MultiView_and_View.aspx" />
     <Content Include="About.aspx" />
+    <Content Include="anuncios.xml" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -141,6 +149,13 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="images\cuatro.png" />
+    <Content Include="images\cube_icon %281%29.png" />
+    <Content Include="images\cube_icon.png" />
+    <Content Include="images\dos.png" />
+    <Content Include="images\social_icon.png" />
+    <Content Include="images\tres.png" />
+    <Content Include="images\uno.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -281,6 +296,55 @@
     <Compile Include="15-WebForm-ListBox.aspx.designer.cs">
       <DependentUpon>15-WebForm-ListBox.aspx</DependentUpon>
     </Compile>
+    <Compile Include="16-WebForm-RadioButtonList.aspx.cs">
+      <DependentUpon>16-WebForm-RadioButtonList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="16-WebForm-RadioButtonList.aspx.designer.cs">
+      <DependentUpon>16-WebForm-RadioButtonList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="17-WebForm-BulletedList.aspx.cs">
+      <DependentUpon>17-WebForm-BulletedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="17-WebForm-BulletedList.aspx.designer.cs">
+      <DependentUpon>17-WebForm-BulletedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="18-WebForm-FileUpload.aspx.cs">
+      <DependentUpon>18-WebForm-FileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="18-WebForm-FileUpload.aspx.designer.cs">
+      <DependentUpon>18-WebForm-FileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="19-WebForm-Calendar.aspx.cs">
+      <DependentUpon>19-WebForm-Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="19-WebForm-Calendar.aspx.designer.cs">
+      <DependentUpon>19-WebForm-Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="20-WebForm-AdRotator.aspx.cs">
+      <DependentUpon>20-WebForm-AdRotator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="20-WebForm-AdRotator.aspx.designer.cs">
+      <DependentUpon>20-WebForm-AdRotator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21-WebForm-HiddenField.aspx.cs">
+      <DependentUpon>21-WebForm-HiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21-WebForm-HiddenField.aspx.designer.cs">
+      <DependentUpon>21-WebForm-HiddenField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22-WebForm-MultiView_and_View.aspx.cs">
+      <DependentUpon>22-WebForm-MultiView_and_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22-WebForm-MultiView_and_View.aspx.designer.cs">
+      <DependentUpon>22-WebForm-MultiView_and_View.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -332,6 +396,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Subidos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

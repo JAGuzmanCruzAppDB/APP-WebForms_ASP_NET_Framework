@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/images/uno.png</ImageUrl>
+		<NavigateUrl>http://www.wikipedia.org/</NavigateUrl>
+		<AlternateText>Visita el sitio oficial</AlternateText>
+		<Impressions>10</Impressions>
+		<Keyword>identificacion</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/dos.png</ImageUrl>
+		<NavigateUrl>http://www.youtube.org/</NavigateUrl>
+		<AlternateText>Actividades</AlternateText>
+		<Impressions>10</Impressions>
+		<Keyword>aprender</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/tres.png</ImageUrl>
+		<NavigateUrl>http://www.facebook.com/</NavigateUrl>
+		<AlternateText>Actividades</AlternateText>
+		<Impressions>10</Impressions>
+		<Keyword>aprender</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/images/cuatro.png</ImageUrl>
+		<NavigateUrl>http://www.facebook.com/</NavigateUrl>
+		<AlternateText>Actividades</AlternateText>
+		<Impressions>10</Impressions>
+		<Keyword>aprender</Keyword>
+	</Ad>
+</Advertisements>
