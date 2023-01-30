@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace _02_00_CRUD_PROCEDURE
+namespace _02_01_CRUD_ProcedureSQL
 {
 
 
-    public partial class _01_00_select_colum_in_GridView
+    public partial class CRUD
     {
 
         /// <summary>

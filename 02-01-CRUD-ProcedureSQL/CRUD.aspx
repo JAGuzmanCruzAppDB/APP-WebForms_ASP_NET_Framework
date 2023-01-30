@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="01-00-select_colum_in_GridView.aspx.cs" Inherits="_02_00_CRUD_PROCEDURE._01_00_select_colum_in_GridView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CRUD.aspx.cs" Inherits="_02_01_CRUD_ProcedureSQL.CRUD" %>
 
 <!DOCTYPE html>
 

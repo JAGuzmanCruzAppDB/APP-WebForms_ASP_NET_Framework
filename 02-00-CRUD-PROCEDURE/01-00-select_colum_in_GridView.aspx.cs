@@ -1,15 +1,17 @@
-﻿using iTextSharp.text.pdf;
-using iTextSharp.text;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using NPOI.XSSF.UserModel;
+using NPOI.SS.UserModel;
+using System.IO;
 using System.Xml.Linq;
 
 namespace _02_00_CRUD_PROCEDURE
@@ -57,7 +59,7 @@ namespace _02_00_CRUD_PROCEDURE
                     from alumno
             end
 
-            exec[SPSalumnos]
+            --exec[SPSalumnos]
              */
         }
         public void GuardaAlumno()
@@ -123,6 +125,19 @@ namespace _02_00_CRUD_PROCEDURE
                 cmd.Connection = conn;
                 conn.Open();
                 cmd.ExecuteNonQuery();
+                /*
+                 create procedure SPUlumnos
+					@id int,
+					@nombre varchar(60),
+					@ap_paterno varchar(60),
+					@ap_materno varchar(60),
+					@email varchar(60)
+			        as 
+			        begin
+					    update alumno set nombre=@nombre, ap_paterno=@ap_paterno, ap_materno=@ap_materno, email=@email where id=@id
+			        end
+                 
+                 */
             }
         }
         public void BajaAlumno(string id)
@@ -218,7 +233,7 @@ namespace _02_00_CRUD_PROCEDURE
         protected void btnGenerarPdf_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            XDocument document = new Document();
+            Document document = new Document();
             PdfWriter write = PdfWriter.GetInstance(document, HttpContext.Current.Response.OutputStream);
             dt = dtAlumno();
             if (dt.Rows.Count > 0)
@@ -329,6 +344,59 @@ namespace _02_00_CRUD_PROCEDURE
             GridViewRow row = (GridViewRow)gvdAlumnos.Rows[e.RowIndex];
             EliminarAlumno(gvdAlumnos.DataKeys[e.RowIndex].Value.ToString());
             CargaDatosAlumno();
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            BusquedaAlumno();
+        }
+
+        protected void btnActualizar_Click(object sender, EventArgs e)
+        {
+            pnlAltaAlumno.Visible = false;
+            pnlDatoAlumno.Visible = true;
+            actualizarAlumno();
+            lblIdAlumno.Text = string.Empty;
+            btnActualizar.Visible = false;
+            btnGuardar.Visible = true;
+            CargaDatosAlumno();
+        }
+
+        protected void lkbActualizar_Click(object sender, EventArgs e)
+        {
+            pnlAltaAlumno.Visible = true;
+            btnGuardar.Visible = false;
+            btnActualizar.Visible = true;
+            GridViewRow row = (GridViewRow)((LinkButton)sender).Parent.Parent;
+            gvdAlumnos.SelectedIndex = row.RowIndex;
+            lblIdAlumno.Text = row.Cells[0].Text;
+            txtNombre.Text = row.Cells[1].Text;
+            txtAp_Paterno.Text = row.Cells[2].Text;
+            txtAp_materno.Text = row.Cells[3].Text;
+            txtEmail.Text = row.Cells[4].Text;
+        }
+
+        protected void btnGenerarExcel_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = dtAlumno();
+            Stream s = DataTableToExcel(dt);
+            if (s != null)
+            {
+                MemoryStream ms = s as MemoryStream;
+                Response.AddHeader("Content-Disposition", string.Format("attachment;filename=" + HttpUtility.UrlEncode("alumnos2022") + ".xlsx"));
+                Response.ContentType = "application/vnd.ms-excel";
+                Response.AddHeader("Content-Length", ms.ToArray().Length.ToString());
+                Response.BinaryWrite(ms.ToArray());
+                Response.Flush();
+                ms.Close();
+                ms.Dispose();
+            }
+        }
+
+        protected void btnCorreo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
