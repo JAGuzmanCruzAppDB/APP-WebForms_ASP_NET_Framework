@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01-Estado_Inicial_y_herr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-01-CRUD-ProcedureSQL", "02-01-CRUD-ProcedureSQL\02-01-CRUD-ProcedureSQL.csproj", "{A2CD77B4-4004-4527-9B08-B134B65E8FBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-00-HerramientasWeb_sqlServer", "03-00-HerramientasWeb_sqlServer\03-00-HerramientasWeb_sqlServer.csproj", "{3152D01B-636F-4687-8789-7D0F3EA9BF5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A2CD77B4-4004-4527-9B08-B134B65E8FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2CD77B4-4004-4527-9B08-B134B65E8FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2CD77B4-4004-4527-9B08-B134B65E8FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3152D01B-636F-4687-8789-7D0F3EA9BF5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3152D01B-636F-4687-8789-7D0F3EA9BF5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3152D01B-636F-4687-8789-7D0F3EA9BF5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3152D01B-636F-4687-8789-7D0F3EA9BF5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
